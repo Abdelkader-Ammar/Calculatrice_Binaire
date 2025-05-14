@@ -20,10 +20,13 @@ The project consists of the following files:
 - GCC (GNU Compiler Collection)
 - Winsock2 library (Windows)
 
-## Compilation
+## Features
+- Binary arithmetic operations
+- Error detection via CRC32
+- Robust client-server communication
+- Error simulation for testing
 
-### To compile the server:
-```bash
-gcc server.c crc32.c -o server.exe -lws2_32:
-
-###to comile
+## Notes
+- Ensure that the server is running before starting the client.
+- The program uses the UDP/IP protocol for communication.
+- Transmission errors are automatically detected and managed.
